@@ -29,9 +29,10 @@ TARGET_PREBUILT_KERNEL := device/samsung/galaxysplus/kernel
 
 #RECOVERY
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysplus/recovery/recovery_ui.c
-TARGET_PROVIDES_INIT := true
-TARGET_PROVIDES_INIT_TARGET_RC := true
-TARGET_RECOVERY_INITRC := device/samsung/galaxysplus/recovery.rc
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/galaxysplus/recovery/graphics.c
+#TARGET_PROVIDES_INIT := true
+#TARGET_PROVIDES_INIT_TARGET_RC := true
+#TARGET_RECOVERY_INITRC := device/samsung/galaxysplus/recovery.rc
 
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
