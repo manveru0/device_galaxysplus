@@ -1,0 +1,6 @@
+README
+
+This is the device folder with specific changes for the the device. It should be located under rootFolderofyourBuild/device/samsung/galaxysplus.
+For example: /home/user/android/system/device/samsung/galaxysplus. Of course you may have a different name for the device.
+
+
