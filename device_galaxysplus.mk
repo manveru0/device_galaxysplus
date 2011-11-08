@@ -33,7 +33,11 @@ device/samsung/galaxysplus/egl.cfg:system/lib/egl/egl.cfg
 
 # Some kernel modules
 PRODUCT_COPY_FILES := \
-device/samsung/galaxysplus/modules/tun.ko:system/lib/modules/tun.ko
+device/samsung/galaxysplus/modules/tun.ko:system/lib/modules/tun.ko \
+device/samsung/galaxysplus/modules/libra.ko:system/lib/modules/libra.ko \
+device/samsung/galaxysplus/modules/librasdiof.ko:system/lib/modules/librasdiof.ko \
+device/samsung/galaxysplus/modules/WCN1314_rf.ko:system/lib/modules/WCN1314_rf.ko \
+device/samsung/galaxysplus/modules/WCN1314_rf_ftm.ko:system/lib/modules/WCN1314_rf_ftm.ko 
 
 $(call inherit-product, build/target/product/full.mk)
 

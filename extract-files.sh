@@ -150,25 +150,15 @@ adb pull /system/media/Disconnected.qmg ../../../vendor/$MANUFACTURER/$COMMON/pr
 PRODUCT_COPY_FILES := \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:obj/lib/libril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcamera.so:system/lib/libcamera.so \\
+
 
 # All the blobs necessary for galaxysplus devices
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/gps.conf:system/etc/gps.conf \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/gpsd:system/vendor/bin/gpsd \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:system/lib/libril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsec-ril.so:system/lib/libsec-ril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/rild:system/bin/rild \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcamera.so:system/lib/libcamera.so \\
-#lib/modules
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libra.ko:system/lib/modules/libra.ko \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/librasdioif.ko:system/lib/modules/librasdioif.ko \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/WCN1314_rf.ko:system/lib/modules/WCN1314_rf.ko \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/WCN1314_rf_ftm.ko:system/lib/modules/WCN1314_rf_ftm.ko \\
-#etc/wifi
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4329_mfg.bin:libra.ko:system/etc/wifi/bcm4329_mfg.bin \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin 
 
 EOF
 
