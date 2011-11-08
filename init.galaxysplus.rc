@@ -1,0 +1,8 @@
+on init
+    export PHONE_STORAGE /mnt/emmc
+
+on fs
+    mount ext4 /dev/block/mmcblk0p15 /system noatime nodiratime wait ro barrier=1
+    mount ext4 /dev/block/mmcblk0p17 /data nosuid nodev noatime nodiratime wait barrier=1 noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p16 /cache nosuid nodev noatime nodiratime wait barrier=1 noauto_da_alloc
+    mount ext4 /dev/block/mmcblk0p12 /persist nodev noatime nodiratime wait barrier=1 noauto_da_alloc
